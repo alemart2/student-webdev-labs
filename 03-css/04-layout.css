@@ -5,11 +5,12 @@
 body {
   color: var(--black);
 }
-
+/* For it to be like the layout in the first screenshot we would have to change box-sizing back to
+   content box and to delete the 'display: inline-block' line */
 .header,
 .section,
 .aside {
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding: 10px;
   border: 4px solid var(--black);
 }
